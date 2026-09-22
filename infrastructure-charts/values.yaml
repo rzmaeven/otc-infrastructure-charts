@@ -44,3 +44,7 @@ charts:
     targetRevision: 9.0.5-bitnamilegacy
     parameters:
       ingress.kibana.host: "admin.{{.Values.projectValues.stageDomain}}"
+  
+  gpu-llm:
+    namespace: ai
+    path: "local-charts/gpu-llm"
