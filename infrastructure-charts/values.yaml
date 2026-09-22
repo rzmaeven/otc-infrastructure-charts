@@ -12,6 +12,8 @@ global:
       ingress.adminDomain: "admin.{{.Values.projectValues.stageDomain}}"
       ingress.host: "admin.{{.Values.projectValues.stageDomain}}"
       ingress.stageDomain: "{{.Values.projectValues.stageDomain}}"
+  git:
+    repoURL: "https://github.com/rzmaeven/otc-infrastructure-charts.git"
 charts:
   # Local chart for development purposes
   basic-auth:
